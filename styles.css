@@ -1,0 +1,106 @@
+body {
+  background:url('../images/background.jpg') no-repeat center top;
+  width:100%;
+  height:100%;   
+  float:left;
+  color:#fff;
+  font-family: 'Alegreya', serif;
+  font-size:30px;
+}
+strong {font-weight:700;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Alegreya', serif;
+  font-size:30px;
+}
+a {color:#c5d31c;text-decoration:none;}
+a:hover {text-decoration:underline;}
+img {max-width:100%;}
+#page {
+  max-width:1000px;
+  margin:0 auto;
+  padding:20px 20px;
+  text-align:center; 
+}
+
+.logo {display:block;text-align:center;margin:20px auto;}
+.pripravujeme {padding:25px 0px;display:block;}
+.pripravujeme span {
+  font-size:48px;
+  font-weight:600;
+  margin:15px 0px 15px 20px;
+  display:inline-block;
+}
+.pripravujeme span.restaurace {
+  background:url('../images/ico_002.png') no-repeat top left;
+  margin:15px 0px 15px 20px;
+  padding:0px 0px 0px 56px;
+}
+.pripravujeme span.wellness {
+  background:url('../images/ico_001.png') no-repeat top left;
+  margin:15px 0px 15px 20px;
+  padding:0px 0px 0px 65px;
+}
+
+.termin {
+  display:block;
+  margin:40px 0 0 0;
+}
+.termin .mesic {
+  font-size:38px;
+  margin-top:10px;
+  display:block;
+}
+.termin .rok {
+  font-size:96px;
+  font-weight:700;
+  top:-50px;
+  position:relative;
+}
+
+
+.clear {clear:both;width:100%;}
+.half {
+  font-family: 'Open Sans', sans-serif;
+  width:50%;
+  margin:0 0 40px 0;
+  float:left;
+  box-sizing: border-box;
+  padding:15px 5%;
+  font-size:18px;
+  text-align:left;
+  line-height:1.6em;
+}
+.half:before {
+  float:left;
+  content: ' ';
+  width:5px;
+  height:165px;
+  margin:-10px 40px 0px 20px;
+  background:#c5d31c;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.half h4 {margin-bottom:10px;}
+@media screen and (max-width: 1024px) {
+body {background:url('../images/background_1024.jpg') no-repeat fixed;}
+}
+@media screen and (max-width: 900px) {
+.pripravujeme span.wellness  {margin:0px 0px 15px;}
+.pripravujeme span.restaurace {margin:15px 0px 0px;}
+.pripravujeme span.a {display:block;margin:0px;}
+.half:before {margin:-10px 20px 0px 10px;}
+.half {font-size:16px;}
+.half h4 {font-size:25px;}
+}
+@media screen and (max-width: 720px) {
+.half:before {display:none;}
+}
+@media screen and (max-width: 640px) {
+.half {width:100%;margin:0;text-align:center;}
+}
+@media screen and (max-width: 450px) {
+.pripravujeme {font-size:25px;}
+.pripravujeme span, .pripravujeme span.restaurace, .pripravujeme span.wellness {font-size:30px;padding:0;background:transparent;margin-left:0;margin-right:0;}
+
+}
